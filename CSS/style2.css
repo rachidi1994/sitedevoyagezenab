@@ -1,0 +1,229 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* POLICE GÉNÉRALE */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #003366 !important;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.navbar .navbar-brand {
+  color: #ffcc00 !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+/* SECTION GÉNÉRALE */
+section {
+  padding: 80px 0;
+}
+
+/* HERO */
+.hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  color: #ffcc00;
+  font-size: 3.5rem;
+  animation: slideInDown 1s ease-out;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero .btn-primary {
+  background-color: #ff6600;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #e65500;
+}
+
+/* DESTINATIONS */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  color: #003366;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* ACCORDÉON CIRCUITS */
+.accordion-button {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #003366;
+  color: #fff;
+}
+
+.accordion-button:hover {
+  background-color: #00509e;
+}
+
+/* FORMULAIRE DE CONTACT */
+form .form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+form .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 10px 20px;
+}
+
+form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* FOOTER */
+footer {
+  background-color: #001f3f;
+  color: #fff;
+}
+
+footer .social-icons i {
+  font-size: 1.6rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+  color: #ffcc00;
+}
+
+/* ANIMATIONS */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.flag-icon {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flag-icon.small {
+  width: 40px;
+  height: 28px;
+}
