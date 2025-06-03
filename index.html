@@ -32,6 +32,11 @@
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
+      <form class="d-flex ms-3" role="search" onsubmit="handleSearch(event)">
+  <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Rechercher" id="searchInput">
+  <button class="btn btn-outline-warning" type="submit">OK</button>
+</form>
+
     </div>
   </div>
 </nav>
@@ -248,29 +253,7 @@
       </div>
 
      <!-- Circuit Safari -->
-<p>Explorez la savane et découvrez la faune sauvage du Kenya.</p>
-<!-- <a href="safari.html" class="btn btn-warning btn-sm me-2">Voir les détails</a> -->
-
-<!-- Suppression des dropdowns -->
-
-<!-- Liste détaillée -->
-<div class="destination-bar mt-3">
-  <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
-    <li class="destination-item text-center">
-      <img src="image2/keneya1.png" alt="Kenya" class="flag-icon mb-2">
-      <div>Masai Mara - Kenya</div>
-    </li>
-    <li class="destination-item text-center">
-      <img src="image2/tanzanie1.jpg" alt="Tanzanie" class="flag-icon mb-2">
-      <div>Serengeti - Tanzanie</div>
-    </li>
-    <li class="destination-item text-center">
-      <img src="image2/afrique du sud1.jpeg" alt="Afrique du Sud" class="flag-icon mb-2">
-      <div>Parc Kruger - Afrique du Sud</div>
-    </li>
-  </ul>
-</div>
->
+<div class="accordion-item">
   <h2 class="accordion-header" id="headingTwo">
     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#circuit2" aria-expanded="false" aria-controls="circuit2">
       Safari en Afrique
@@ -280,81 +263,44 @@
     <div class="accordion-body">
       <p>Explorez la savane et découvrez la faune sauvage du Kenya.</p>
       <a href="safari.html" class="btn btn-warning btn-sm me-2">Voir les détails</a>
-
-      <!-- Barre logos -->
-       <div class="dropdown">
-    <img src="image2/keneya1.png" alt="Kenya" class="flag-icon dropdown-toggle" title="Kenya" data-bs-toggle="dropdown" aria-expanded="false" style="cursor:pointer;">
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Infos sur le Kenya</a></li>
-      <li><a class="dropdown-item" href="#">Destinations populaires</a></li>
-      <li><a class="dropdown-item" href="#">Voyages organisés</a></li>
-    </ul>
-  </div>
-
-  <!-- Tanzanie Dropdown -->
-  <div class="dropdown">
-    <img src="image2/tanzanie1.jpg" alt="Tanzanie" class="flag-icon dropdown-toggle" title="Tanzanie" data-bs-toggle="dropdown" aria-expanded="false" style="cursor:pointer;">
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Infos sur la Tanzanie</a></li>
-      <li><a class="dropdown-item" href="#">Parcs nationaux</a></li>
-      <li><a class="dropdown-item" href="#">Circuits touristiques</a></li>
-    </ul>
-  </div>
-
-  <!-- Afrique du Sud Dropdown -->
-  <div class="dropdown">
-    <img src="image2/afrique du sud1.jpeg" alt="Afrique du Sud" class="flag-icon dropdown-toggle" title="Afrique du Sud" data-bs-toggle="dropdown" aria-expanded="false" style="cursor:pointer;">
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Infos Afrique du Sud</a></li>
-      <li><a class="dropdown-item" href="#">Safaris & excursions</a></li>
-      <li><a class="dropdown-item" href="#">Villes principales</a></li>
-    </ul>
-  </div>
-
-</div>
-
-      <!-- Liste détaillée -->
       <div class="destination-bar mt-3">
         <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
-          <li class="destination-item text-center">
-            <img src="image2/keneya1.png" alt="Kenya" class="flag-icon mb-2">
-            <div>Masai Mara - Kenya</div>
-          </li>
-          <li class="destination-item text-center">
-            <img src="image2/tanzanie1.jpg" alt="Tanzanie" class="flag-icon mb-2">
-            <div>Serengeti - Tanzanie</div>
-          </li>
-          <li class="destination-item text-center">
-            <img src="image2/afrique du sud1.jpeg" alt="Afrique du Sud" class="flag-icon mb-2">
-            <div>Parc Kruger - Afrique du Sud</div>
-          </li>
+          <li class="destination-item text-center col-md-4">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="image2/keneya1.png" alt="Kenya" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+    <div class="card-body">
+      <div class="card-title fw-bold">Masai Mara - Kenya</div>
+    </div>
+  </div>
+</li>
+
+          <li class="destination-item text-center col-md-4">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="image2/tanzanie1.jpg" alt="Kenya" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+    <div class="card-body">
+      <div class="card-title fw-bold">Sarengiti - Tanzanie</div>
+    </div>
+  </div>
+</li>
+
+         <li class="destination-item text-center col-md-4">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="image2/afrique du sud1.jpeg" alt="Kenya" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+    <div class="card-body">
+      <div class="card-title fw-bold">Parc burger - Afrique du sud</div>
+    </div>
+  </div>
+</li>
+
         </ul>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Circuit Asie -->
-<!-- Suppression de la barre de logos -->
 
-<!-- Liste détaillée -->
-<div class="destination-bar mt-3">
-  <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
-    <li class="destination-item text-center">
-      <img src="image2/thailande1.jpg" alt="Thaïlande" class="flag-icon mb-2">
-      <div>Bangkok & Chiang Mai - Thaïlande</div>
-    </li>
-    <li class="destination-item text-center">
-      <img src="image2/vietnam-1.webp" alt="Vietnam" class="flag-icon mb-2">
-      <div>Baie d'Halong & Hanoï - Vietnam</div>
-    </li>
-    <li class="destination-item text-center">
-      <img src="image2/cambodge-1.jpg" alt="Cambodge" class="flag-icon mb-2">
-      <div>Temples d’Angkor - Cambodge</div>
-    </li>
-  </ul>
-</div>
->
+<!-- Circuit Asie -->
+<div class="accordion-item">
   <h2 class="accordion-header" id="headingThree">
     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#circuit3" aria-expanded="false" aria-controls="circuit3">
       Aventure en Asie
@@ -362,6 +308,43 @@
   </h2>
   <div id="circuit3" class="accordion-collapse collapse" data-bs-parent="#accordionCircuits">
     <div class="accordion-body">
+      <p>Découvrez les joyaux d'Asie du Sud-Est avec un circuit immersif.</p>
+      <a href="asie.html" class="btn btn-warning btn-sm me-2">Voir les détails</a>
+      <div class="destination-bar mt-3">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3">
+          <li class="destination-item text-center col-md-4">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="image2/thailande1.jpg" alt="Thaïlande" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+    <div class="card-body">
+      <div class="card-title fw-bold">Bangkok & Chiang Mai - Thaïlande</div>
+    </div>
+  </div>
+</li>
+
+          <li class="destination-item text-center col-md-4">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="image2/vietnam-1.webp" alt="Thaïlande" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+    <div class="card-body">
+      <div class="card-title fw-bold">Baie d'halong & malon - Vietnam</div>
+    </div>
+  </div>
+</li>
+
+          <li class="destination-item text-center col-md-4">
+  <div class="card h-100 shadow-sm border-0">
+    <img src="image2/cambodge-1.jpg" alt="Thaïlande" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+    <div class="card-body">
+      <div class="card-title fw-bold">Temple d'agorge - Cambodge</div>
+    </div>
+  </div>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
      
 
 
@@ -392,46 +375,6 @@
     </form>
   </div>
 </section>
-<script>
-  // Form validation & animation
-  const form = document.getElementById('contactForm');
-  const alertBox = document.getElementById('formAlert');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const destination = form.destination.value.trim();
-    const message = form.message.value.trim();
-
-    if (name && email && destination && message) {
-      alertBox.style.display = 'block';
-      alertBox.className = 'alert alert-success';
-      alertBox.textContent = "Merci ! Votre message a été envoyé avec succès.";
-      form.reset();
-    } else {
-      alertBox.style.display = 'block';
-      alertBox.className = 'alert alert-danger';
-      alertBox.textContent = "Veuillez remplir tous les champs.";
-    }
-
-    // Disparition automatique du message
-    setTimeout(() => {
-      alertBox.style.display = 'none';
-    }, 4000);
-  });
-</script>
-
-<style>
-  #contact input, #contact textarea {
-    transition: all 0.3s ease-in-out;
-  }
-  #contact input:focus, #contact textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0,123,255,0.3);
-  }
-</style>
 
 
 <!-- FOOTER -->
@@ -445,7 +388,7 @@
     </div>
   </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
